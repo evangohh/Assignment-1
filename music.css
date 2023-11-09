@@ -1,0 +1,75 @@
+body {
+    background-color: powderblue;
+    }
+    .flex-container-cover {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center the flex items horizontally */
+        align-items: center; /* Center the flex items vertically */
+        height: 100px;
+      }
+.flex-container-cover {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+      }
+      
+.flex-item {
+        margin: 0 10px; /* Adjust the margin as needed */
+      }
+      
+.button {
+        text-decoration: none;
+        color: white; /* Text color for the buttons */
+        background-color: purple; /* Background color for the buttons */
+        padding: 10px 20px; /* Padding inside the buttons */
+        border-radius: 5px; /* Optional: Adds rounded corners to the buttons */
+        transition: background-color 0.3s ease; /* Smooth transition for background color change */
+      }
+.button {
+  font-family: Arial, sans-serif;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+      
+.button:hover {
+        background-color: #7ac2cc; /* Background color on hover */
+      }
+.image-container, .image-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  margin: 45px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+.image-wrapper:hover .text-overlay {
+  opacity: 1;
+}
+
+
+

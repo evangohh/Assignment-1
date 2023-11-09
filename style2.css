@@ -30,7 +30,7 @@
     box-sizing: content-box;
     border: black;
     color: black;
-    padding: 15px 32px;
+    padding: 20px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -40,9 +40,20 @@
   .flex-container-cover {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Optional: Adjust the alignment as needed */
-    align-items: center; /* Optional: Align items vertically in the center */
-    height: 100px; /* Optional: Set a fixed height for the flex container */
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    height: 100px;
   }
+  .button {
+    text-decoration: none;
+    color: white; /* Text color for the buttons */
+    background-color: rgb(107, 180, 226); /* Background color for the buttons */
+    padding: 10px 20px; /* Padding inside the buttons */
+    border-radius: 5px; /* Optional: Adds rounded corners to the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+.button {
+font-family: Arial, sans-serif;
+}
   
   
