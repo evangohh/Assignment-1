@@ -1,0 +1,35 @@
+.video-container {
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 50vh; /* Set a specific height if needed, or use any other value */
+  }
+  body {
+  font-family: Arial, sans-serif;
+  background-color: powderblue;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: powderblue;
+  color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header h4 {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+  }

@@ -74,5 +74,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto; /* Allow vertical scrolling */
   }
-
+  body {
+    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+  }
 
