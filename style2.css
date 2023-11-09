@@ -28,8 +28,8 @@
   .button {
     background-color: transparent;
     box-sizing: content-box;
-    border: black;
-    color: black;
+    border: purple;
+    color: purple;
     padding: 20px 20px;
     text-align: center;
     text-decoration: none;
@@ -47,7 +47,7 @@
   .button {
     text-decoration: none;
     color: white; /* Text color for the buttons */
-    background-color: rgb(107, 180, 226); /* Background color for the buttons */
+    background-color: purple; /* Background color for the buttons */
     padding: 10px 20px; /* Padding inside the buttons */
     border-radius: 5px; /* Optional: Adds rounded corners to the buttons */
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
