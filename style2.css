@@ -1,0 +1,48 @@
+
+.centered-content a {
+    margin-right: 20px;
+  }
+  
+  .flex-item a {
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .flex-item {
+    margin: 0 30px; 
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #008CBA;
+  }
+  .button {
+    background-color: transparent;
+    box-sizing: content-box;
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+  }
+  .flex-container-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Optional: Adjust the alignment as needed */
+    align-items: center; /* Optional: Align items vertically in the center */
+    height: 100px; /* Optional: Set a fixed height for the flex container */
+  }
+  
+  

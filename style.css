@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    background-image: url('summer salt band.jpeg');
+    background-size: cover;
+    filter: brightness(1.2);
+    margin: 0; 
+  }
+  
+  .centered-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
