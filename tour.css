@@ -36,9 +36,7 @@ h2{
 .buy-tickets-button:hover {
   background-color: #45a049;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;
-  }
- body {
-    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   }
