@@ -26,12 +26,13 @@ body {
         padding: 10px 20px; /* Padding inside the buttons */
         border-radius: 5px; /* Optional: Adds rounded corners to the buttons */
         transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        font-family: 'Caveat', cursive, 'Oswald', sans-serif;
       }
 .button {
-  font-family: Arial, sans-serif;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   }
       
 .button:hover {
@@ -85,7 +86,7 @@ body {
   
   /* Style for the dropdown container */
   .dropdown {
-    position: relative;
+    position: fixed;
     display: inline-block;
   }
   
@@ -98,6 +99,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   }
   
   /* Style for the dropdown content */
