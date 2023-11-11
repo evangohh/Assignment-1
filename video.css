@@ -1,15 +1,9 @@
-.video-container {
-    display: flex  ;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    height: 50vh; /* Set a specific height if needed, or use any other value */
-  }
-  body {
+body {
   font-family: Arial, sans-serif;
   background-color: powderblue;
   margin: 0;
   padding: 0;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 
 .header {
@@ -19,6 +13,7 @@
   height: 50px;
   background-color: powderblue;
   color: black;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;   
 }
 
 .header a {
@@ -29,7 +24,31 @@
 .header h4 {
   margin: 0;
   padding: 0;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
-body {
-    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
-  }
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.dropbtn {
+  background-color: purple;
+  color: white;
+  padding: 12px;
+  font-size: 19px; /* Adjust the font size according to your preference */
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  height: 50vh; /* Set a specific height if needed, or use any other value */
+}
