@@ -23,5 +23,9 @@ body {
   }
 
   body {
-    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+    font-family: 'Caveat', cursive, 'Oswald', sans-serif;}
+    #buttons {
+      display: flex;
+      flex-direction: column; /* Align buttons vertically */
+      margin-right: 20px; /* Add margin to the right of the buttons */
     }
