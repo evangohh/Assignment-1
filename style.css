@@ -1,31 +1,128 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('summer salt band.jpeg');
-    background-size: cover;
-    filter: brightness(1.2);
-    margin: 0; 
-  }
-  
-  .centered-content {
-    display: flex;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('summer salt band.jpeg');
+  background-size: cover;
+  filter: brightness(1.2);
+  margin: 0;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+  padding: 0;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.centered-content a {
+  margin-right: 10px;
+}
+
+.flex-item a {
+  margin-bottom: 10px;
+}
+
+.flex-container,
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.button,
+.dropbtn {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 10px ;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+}
+
+.flex-container-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+/* Styles for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(49, 157, 200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Styles for the dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: purple;
+}
+
+/* Display the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
   img {
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    margin-right: 30px;
-    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
   }
 
-  body {
-    font-family: 'Caveat', cursive, 'Oswald', sans-serif;}
-    #buttons {
-      display: flex;
-      flex-direction: column; /* Align buttons vertically */
-      margin-right: 20px; /* Add margin to the right of the buttons */
-    }
+  #buttons,
+  .flex-container,
+  .flex-container-cover {
+    flex-direction: row; /* Change to row layout for smaller screens */
+    margin-right: 0;
+  }
+
+  .flex-item {
+    margin: 5px 0;
+  }
+
+  .button,
+  .dropbtn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+
+
