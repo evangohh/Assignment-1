@@ -1,9 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   background-color: powderblue;
   margin: 0;
   padding: 0;
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 
 .header {
@@ -13,7 +12,6 @@ body {
   height: 50px;
   background-color: powderblue;
   color: black;
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;   
 }
 
 .header a {
@@ -24,7 +22,6 @@ body {
 .header h4 {
   margin: 0;
   padding: 0;
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 
 .dropdown {
@@ -38,17 +35,70 @@ body {
   background-color: purple;
   color: white;
   padding: 12px;
-  font-size: 19px; /* Adjust the font size according to your preference */
+  font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 15px;
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 
 .video-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
-  height: 50vh; /* Set a specific height if needed, or use any other value */
+  margin: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+
+  .header h4 {
+    margin-bottom: 5px;
+  }
+
+  .dropdown {
+    margin: 5px;
+  }
+
+  .dropbtn {
+    font-size: 14px;
+  }
+
+  .video-container {
+    margin-left: 10px;
+  }
+}
+
+.flex-container-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.flex-item {
+  margin: 0 10px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+}
+
+.button:hover {
+  background-color: #7ac2cc;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
