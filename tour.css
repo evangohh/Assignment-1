@@ -25,3 +25,19 @@
       margin: 10px;
     }
   }
+
+  
+  .header {
+    text-align: center;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px; /* Add margin between links */
+  }
+  
+  .header h4 {
+    display: inline; /* Prevents the line break between "FAQ" and "/" */
+  }
+  
