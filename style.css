@@ -3,12 +3,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('summer salt band.jpeg');
-  background-size: cover;
+  background-color: powderblue;
+  background-size: auto;
   filter: brightness(1.2);
   margin: 0;
   font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+.header {
+  text-align: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px; /* Add margin between links */
+}
+
+.header h4 {
+  display: inline; /* Prevents the line break between "FAQ" and "/" */
 }
 
 .centered-content {
@@ -29,7 +46,10 @@ img {
   margin: 10px;
 }
 
-.centered-content a {
+.centered-content a,
+.header a {
+  text-decoration: none;
+  color: inherit;
   margin-right: 10px;
 }
 
@@ -50,11 +70,10 @@ img {
   text-decoration: none;
   color: white;
   background-color: purple;
-  padding: 10px ;
+  padding: 10px;
   border-radius: 10px;
   display: inline-block;
   font-size: 14px;
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
 }
 
 .flex-container-cover {
@@ -123,6 +142,7 @@ img {
     font-size: 12px;
   }
 }
+
 
 
 
