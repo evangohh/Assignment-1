@@ -1,42 +1,27 @@
-.date-column,
-.place-column,
-.country-column,
-.tickets-column {
-  width: 25%; /* Each column takes up 25% of the available width */
-  float: left; /* Float the columns to create the layout */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  padding: 10px; /* Add padding for spacing within each column */
-}
-
-.tour-date {
-  clear: both; /* Clear the float to prevent content from wrapping around the columns */
-}
-h2{
-    margin-left: 100px;
-}
-.tour-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Add this line to evenly space out child elements */
-    margin-top: 40px; /* Optional: Add some margin at the top for spacing */
-    margin-left: 200px
+.dropbtn {
+    margin-left: 10px; /* Adjust the value as needed to move the button away from the left side */
+    margin-top: 10px;
   }
-.buy-tickets-button {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+  .concert-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.buy-tickets-button:hover {
-  background-color: #45a049;
-}
+  .concert {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+  }
+  
 
-body {
-  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+  /* Add a media query for larger screens (desktop) */
+  @media (min-width: 768px) {
+    .concert-container {
+      flex-direction: row;
+    }
+
+    .concert {
+      flex: 1;
+      margin: 10px;
+    }
   }
