@@ -3,93 +3,82 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: powderblue;
-  background-size: auto;
+  background: powderblue url('summer\ salt\ band.jpeg') no-repeat center center fixed;
+  background-size: cover;
   filter: brightness(1.2);
   margin: 0;
   font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   padding: 0;
 }
 
-h1 {
+h1, h2, .header {
   text-align: center;
-}
-.header {
-  text-align: center;
+  color: white;
+  
 }
 
 .header a {
   text-decoration: none;
-  color: black;
-  margin: 0 10px; /* Add margin between links */
+  margin: 0 10px;
+  color: white;
 }
 
 .header h4 {
-  display: inline; /* Prevents the line break between "FAQ" and "/" */
+  display: inline;
+  color: white;
+}
+.header a:link,
+.header a:visited {
+  text-decoration: none;
+  color: white;
 }
 
-.centered-content {
+.header a:hover {
+  background-color: purple;
+  color: white; /* Set the hover color to white */
+}
+.centered-content,
+#buttons,
+.flex-container,
+.flex-container-cover,
+.flex-item,
+.button,
+.dropbtn,
+.dropdown,
+.dropdown-content,
+.dropdown-content a,
+.concert-container,
+.concert {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
-#buttons {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
+  color: white;
 }
 
 .centered-content a,
-.header a {
+.header a,
+.flex-item a,
+.dropdown-content a {
   text-decoration: none;
   color: inherit;
   margin-right: 10px;
 }
 
-.flex-item a {
-  margin-bottom: 10px;
-}
-
-.flex-container,
-.flex-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-
 .button,
 .dropbtn {
-  text-decoration: none;
-  color: white;
   background-color: purple;
   padding: 10px;
   border-radius: 10px;
   display: inline-block;
   font-size: 14px;
+  color: white;
 }
 
-.flex-container-cover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0;
-}
-
-/* Styles for the dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Styles for the dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -100,23 +89,51 @@ img {
   border-radius: 10px;
 }
 
-/* Styles for the dropdown links */
 .dropdown-content a {
-  color: white;
   padding: 10px;
   text-decoration: none;
   display: block;
+  color: white;
 }
 
-/* Change color on hover */
 .dropdown-content a:hover {
   background-color: purple;
 }
 
-/* Display the dropdown content when hovering over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.FAQ-Policies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px; /* Add padding for better visibility */
+  background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
+}
+
+.FAQ-Policies a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px; /* Add margin between links */
+}
+
+.FAQ-Policies h4 {
+  display: inline;
+  margin: 0 5px; /* Add margin between links */
+}
+
 
 @media only screen and (max-width: 767px) {
   img {
@@ -125,10 +142,16 @@ img {
     margin: 5px;
   }
 
+  .button, .dropbtn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
   #buttons,
   .flex-container,
-  .flex-container-cover {
-    flex-direction: row; /* Change to row layout for smaller screens */
+  .flex-container-cover,
+  .flex-item {
+    flex-direction: row;
     margin-right: 0;
   }
 
@@ -136,13 +159,7 @@ img {
     margin: 5px 0;
   }
 
-  .button,
-  .dropbtn {
-    padding: 8px 12px;
-    font-size: 12px;
+  .concert {
+    width: 100%;
   }
 }
-
-
-
-

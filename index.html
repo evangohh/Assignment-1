@@ -7,16 +7,44 @@
   <title>Summer Salt - Unofficial Store</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="merch.css">
-</head>
-
-<body>
   <style>
     .dropdown {
       position: fixed;
       top: 0;
       left: 0;
       margin: 10px; 
-    } </style>
+    }
+
+    body {
+      margin: 0;
+      padding: 0; 
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url('summer_salt_band.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      transition: opacity 0.5s ease;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25vh;
+      color: white; /* Text color on top of the background image */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background"></div>
+
   <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
@@ -25,10 +53,10 @@
       <a href="tour.html">Tours</a>
       <a href="video.html">Videos</a>
       <a href="about.html">About</a>
-
     </div>
   </div>
-  <div style="display: flex; justify-content: center; align-items: center; height: 25vh;">
+
+  <div class="content">
     <h1>SUMMER SALT</h1>
   </div>
 
@@ -63,16 +91,49 @@
   </div>  
   <h1>CAMPANITA - OUT NOW!</h1>
   <img src="v600_Campanita_album_art.jpg" alt="Campanita Album"style="width: 300px; height: 300px; margin-bottom: 20px;">
-  <body>
-    <div class="header">
-      <a href="https://wearescp.zendesk.com/hc/en-us">
-        <h4>FAQ</h4>
-      </a>
-      /
-      <a href="https://wearescp.zendesk.com/hc/en-us/categories/360004577551-SCP-Policies-">
-        <h4>Policies</h4>
-      </a>
+  <div style="height: 10px; background-color: white;"></div>
+    <script>
+ document.addEventListener("scroll", function () {
+  var scrollPosition = window.scrollY;
+  var background = document.querySelector(".background");
+  var newPosition = "center " + (50 - scrollPosition / 10) + "%"; // Adjust the value for the parallax effect
+
+  background.style.backgroundPosition = newPosition;
+});
+    </script>
+    <h2>
+      Featured Clothing
+    </h2>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img src="SS-TealerinaTee.png" alt="SS-TealerinaTee" class="image">
+        <div class="text-overlay">CAMPANITA TEALERINA TEE $35.00</div>
+      </div>
+      <div class="image-wrapper">
+        <img src="summer salt hoodie.png" alt="SS-Hoodie" class="image">
+        <div class="text-overlay">SUMMER SALT RAINBOW CROPPED HOODIE $45.00</div>
+      </div>
+      <div class="image-wrapper">
+        <img src="SS-JuicyHoodie.png" alt="SS-JuicyHoodie" class="image">
+        <div class="text-overlay">TJUICY FRUIT HOODIE $50.00</div>
+      </div>
     </div>
-  </body>
+    <div class="concert-container">
+      <div class="concert">
+        <h2>DEC 28, 2023</h2>
+        <p>Strummer's Bar & Grill<br>Fresno, CA<br>With support from Small Crush and Alex Togashii</p>
+        <a href="tour.html">TICKETS</a>
+      </div>
+    
+      <div class="concert">
+        <h2>DEC 29, 2023</h2>
+        <p>House of Blues Las Vegas<br>Las Vegas, NV<br>With support from Small Crush and Alex Togashii</p>
+        <a href="tour.html">TICKETS</a>
+      </div>
+    
+      <div class="concert">
+        <h2>DEC 31, 2023</h2>
+        <p>House of Blues<br>San Diego, CA<br>With support from Almost Monday and Alex Togashii</p>
+        <a href="tour.html">TICKETS</a>
   </html>
 
