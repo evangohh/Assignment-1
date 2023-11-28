@@ -3,6 +3,19 @@ body {
   font-family: 'Caveat', cursive, 'Oswald', sans-serif;
   margin: 0;
 }
+.header {
+  text-align: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px; /* Add margin between links */
+}
+
+.header h4 {
+  display: inline; /* Prevents the line break between "FAQ" and "/" */
+}
 
 .flex-container-cover {
   display: flex;
@@ -103,6 +116,7 @@ body {
 
 .image-wrapper:hover .text-overlay {
   opacity: 1;
+  
 }
 
 body {
@@ -110,6 +124,18 @@ body {
   overflow-y: auto;
 }
 
+#cart-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 2; }
+  /* Ensure cart is above other content */
+
+  
 @media only screen and (max-width: 375px) {
   /* iPhone XR width is 375px in portrait mode */
   .flex-container-cover {
