@@ -19,86 +19,140 @@
       text-decoration: none;
       color: inherit;
     }
+    .dropdown {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 10px; 
+    }
   </style>
-  </head>
-  <body>
-    <style>
-      .dropdown {
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 10px; 
-      } </style>
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="merch.html">Merch</a>
-        <a href="tour.html">Tours</a>
-        <a href="video.html">Videos</a>
-        <a href="about.html">About</a>
-  
-      </div>
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="merch.html">Merch</a>
+      <a href="tour.html">Tours</a>
+      <a href="video.html">Videos</a>
+      <a href="about.html">About</a>
     </div>
-    <div class="header">
-      <a href="index.html">
-        <h1>SUMMER SALT</h1>
-      </a>
-    </div>
-  </body>
+  </div>
+
+  <div class="header">
+    <a href="index.html">
+      <h1>SUMMER SALT</h1>
+    </a>
+  </div>
+
   <div class="flex-container-cover">
     <div class="flex-item">
-        <a href="featured.html" class="button">Featured</a>
+      <a href="featured.html" class="button">Featured</a>
     </div>
     <div class="flex-item">
-      <a href="music.html"class="button">Music</a>
+      <a href="music.html" class="button">Music</a>
     </div>
     <div class="flex-item">
-      <a href="clothing.html"class="button">Clothing</a>
+      <a href="clothing.html" class="button">Clothing</a>
     </div>
     <div class="flex-item">
-      <a href="accessories.html"class="button">Accessories</a>
+      <a href="accessories.html" class="button">Accessories</a>
     </div>
   </div>  
+
   <div class="image-container">
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('CAMPANITA TEALERINA TEE', 35.00)">
       <img src="SS-TealerinaTee.png" alt="SS-TealerinaTee" class="image">
       <div class="text-overlay">CAMPANITA TEALERINA TEE $35.00</div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('SUMMER SALT RAINBOW CROPPED HOODIE', 45.00)">
       <img src="summer salt hoodie.png" alt="SS-Hoodie" class="image">
       <div class="text-overlay">SUMMER SALT RAINBOW CROPPED HOODIE $45.00</div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('TJUICY FRUIT HOODIE', 50.00)">
       <img src="SS-JuicyHoodie.png" alt="SS-JuicyHoodie" class="image">
       <div class="text-overlay">TJUICY FRUIT HOODIE $50.00</div>
     </div>
   </div>
-  
+
   <div class="image-row">
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('PAISLEY FLOWER TOTE BAG', 20.00)">
       <img src="SS-Tote-2.png" alt="SS-Tote-2" class="image">
       <div class="text-overlay">PAISLEY FLOWER TOTE BAG $20.00</div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('CAMPANITA ENAMEL PIN', 10.00)">
       <img src="SS-CampanitaPin.png" alt="SS-CampanitaPin" class="image">
       <div class="text-overlay">CAMPANITA ENAMEL PIN $10.00</div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" onclick="addToCart('THE EARLY EPS VINYL', 25.00)">
       <img src="SUMMER_SALT_EPS_CLOUDY_GREEN_8.png" alt="SS-Early Eps Vinyl" class="image">
       <div class="text-overlay">THE EARLY EPS VINYL $25.00</div>
     </div>
   </div>
-  <body>
-    <div class="header">
-      <a href="https://wearescp.zendesk.com/hc/en-us">
-        <h4>FAQ</h4>
-      </a>
-      /
-      <a href="https://wearescp.zendesk.com/hc/en-us/categories/360004577551-SCP-Policies-">
-        <h4>Policies</h4>
-      </a>
-    </div>
-  </body>
+
+  <div class="header">
+    <a href="https://wearescp.zendesk.com/hc/en-us">
+      <h4>FAQ</h4>
+    </a>
+    /
+    <a href="https://wearescp.zendesk.com/hc/en-us/categories/360004577551-SCP-Policies-">
+      <h4>Policies</h4>
+    </a>
+  </div>
+
+  <div id="cart-container">
+    <!-- Cart items will be displayed here -->
+  </div>
+
+  <script>
+    let cartItems = [];
   
+    function addToCart(itemName, itemPrice) {
+      // Add the item to the cart
+      cartItems.push({ name: itemName, price: itemPrice });
+  
+      // Update the cart display
+      updateCartDisplay();
+    }
+  
+    function updateCartDisplay() {
+      // Update the cart container with the current cart items
+      let cartContainer = document.getElementById('cart-container');
+      cartContainer.innerHTML = '<h3>Shopping Cart</h3>';
+  
+      if (cartItems.length === 0) {
+        // Display a message when the cart is empty
+        cartContainer.innerHTML += '<p>Your cart is empty.</p>';
+      } else {
+        // Display each item in the cart
+        cartItems.forEach(item => {
+          let itemElement = document.createElement('div');
+          itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+          cartContainer.appendChild(itemElement);
+        });
+  
+        // Display the total price
+        let totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+        cartContainer.innerHTML += `<p>Total: $${totalPrice.toFixed(2)}</p>`;
+      }
+    }
+  
+    // Attach click event listeners to each image
+    document.querySelectorAll('.image-wrapper').forEach(imageWrapper => {
+      imageWrapper.addEventListener('click', function () {
+        // Extract item details from the clicked image
+        let textOverlay = this.querySelector('.text-overlay').textContent;
+        let matches = textOverlay.match(/^(.*?) \$([\d.]+)/);
+        if (matches) {
+          let itemName = matches[1];
+          let itemPrice = parseFloat(matches[2]);
+          // Add the item to the cart
+          addToCart(itemName, itemPrice);
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>
 
