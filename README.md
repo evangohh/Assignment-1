@@ -72,3 +72,21 @@ Feature idea: Implement a community forum or social platform where fans can shar
 
 ### Newsletter Subscription:
 Feature idea: Allow users to subscribe to a newsletter for regular updates, exclusive content, and announcements.
+
+## Technologies Used:
+
+#### HTML:
+
+Official Site: [HTMl](https://www.w3schools.com/html/html_basic.asp)
+
+Usage: HTML (HyperText Markup Language) is the standard markup language for creating web pages. It was used to structure the content and layout of the website.
+#### CSS:
+
+Official Site: [CSS](https://www.w3schools.com/css/default.asp)
+
+Usage: CSS (Cascading Style Sheets) was employed to style the HTML elements, providing a visually appealing and responsive design for the website.
+#### JavaScript:
+
+Official Site: [JavaScript](https://www.w3schools.com/js/default.asp)
+
+Usage: JavaScript was used to enhance the website's interactivity. It facilitated features such as the dropdown menu, 'Add to Cart' functionality, and any dynamic elements on the website.
