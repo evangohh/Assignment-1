@@ -90,3 +90,38 @@ Usage: CSS (Cascading Style Sheets) was employed to style the HTML elements, pro
 Official Site: [JavaScript](https://www.w3schools.com/js/default.asp)
 
 Usage: JavaScript was used to enhance the website's interactivity. It facilitated features such as the dropdown menu, 'Add to Cart' functionality, and any dynamic elements on the website.
+
+## Testing
+### Merchandise Page:
+
+- Go to the "Merchandise" page.
+- Click on merchandise images to add items to the cart.
+- Verify that selected items are correctly added to the cart.
+- Check the responsiveness of the page on different screen sizes.
+### Tour Page:
+
+- Navigate to the "Tour" page.
+- Click on different tour dates and venues.
+- Ensure that relevant details are displayed for each event.
+- Test the page's responsiveness on various devices.
+### About Page:
+
+- Visit the "About" page
+- Explore the band's history and member information.
+- Verify that the content is accurate and engaging.
+- Check how the page appears on different browsers.
+### Dropdown Menu:
+
+- Access the website and use the dropdown menu to navigate.
+- Ensure that each option directs to the correct section.
+- Test the dropdown functionality on both desktop and mobile views.
+### Hover Over Image for Merchandise:
+
+- Hover over merchandise images on the "Merchandise" page.
+- Confirm that a tooltip or pop-up displays relevant details like the name and price.
+- Check for consistency in the feature across browsers.
+### Browser and Screen Size Testing:
+
+- Test the website on popular browsers (Chrome, Firefox, Safari, Edge) to ensure compatibility.
+- Verify that the website is responsive on various screen sizes (desktop, tablet, mobile).
+- Check for any layout issues or discrepancies in different browsers.
