@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: powderblue url('summer\ salt\ band.jpeg') no-repeat center center fixed;
+  background: powderblue url('images/summer\ salt\ band.jpeg') no-repeat center center fixed;
   background-size: cover;
   filter: brightness(1.2);
   margin: 0;
@@ -13,8 +13,8 @@ body {
 
 h1, h2, .header {
   text-align: center;
-  color: white;
-  
+  color: white;  /* Set the default color to white */
+  text-decoration: none;
 }
 
 .header a {
@@ -37,6 +37,7 @@ h1, h2, .header {
   background-color: purple;
   color: white; /* Set the hover color to white */
 }
+
 .centered-content,
 #buttons,
 .flex-container,
