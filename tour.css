@@ -28,7 +28,12 @@
 
   
   .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: powderblue;
+    color: black;
   }
   
   .header a {
@@ -40,4 +45,3 @@
   .header h4 {
     display: inline; /* Prevents the line break between "FAQ" and "/" */
   }
-  
