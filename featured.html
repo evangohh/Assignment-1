@@ -62,30 +62,30 @@
 
   <div class="image-container" id="item-container">
     <div class="image-wrapper" onclick="addToCart('CAMPANITA TEALERINA TEE', 35.00)">
-      <img src="SS-TealerinaTee.png" alt="SS-TealerinaTee" class="image">
+      <img src="images/SS-JuicyHoodie.png" alt="SS-TealerinaTee" class="image">
       <div class="text-overlay">CAMPANITA TEALERINA TEE $35.00</div>
     </div>
     <div class="image-wrapper" onclick="addToCart('SUMMER SALT RAINBOW CROPPED HOODIE', 45.00)">
-      <img src="summer salt hoodie.png" alt="SS-Hoodie" class="image">
+      <img src="images/summer salt hoodie.png" alt="SS-Hoodie" class="image">
       <div class="text-overlay">SUMMER SALT RAINBOW CROPPED HOODIE $45.00</div>
     </div>
     <div class="image-wrapper" onclick="addToCart('TJUICY FRUIT HOODIE', 50.00)">
-      <img src="SS-JuicyHoodie.png" alt="SS-JuicyHoodie" class="image">
+      <img src="images/SS-JuicyHoodie.png" alt="SS-JuicyHoodie" class="image">
       <div class="text-overlay">TJUICY FRUIT HOODIE $50.00</div>
     </div>
   </div>
 
   <div class="image-row" id="item-container">
     <div class="image-wrapper" onclick="addToCart('PAISLEY FLOWER TOTE BAG', 20.00)">
-      <img src="SS-Tote-2.png" alt="SS-Tote-2" class="image">
+      <img src="images/SS-Tote-2.png" alt="SS-Tote-2" class="image">
       <div class="text-overlay">PAISLEY FLOWER TOTE BAG $20.00</div>
     </div>
     <div class="image-wrapper" onclick="addToCart('CAMPANITA ENAMEL PIN', 10.00)">
-      <img src="SS-CampanitaPin.png" alt="SS-CampanitaPin" class="image">
+      <img src="images/SS-CampanitaPin.png" alt="SS-CampanitaPin" class="image">
       <div class="text-overlay">CAMPANITA ENAMEL PIN $10.00</div>
     </div>
     <div class="image-wrapper" onclick="addToCart('THE EARLY EPS VINYL', 25.00)">
-      <img src="SUMMER_SALT_EPS_CLOUDY_GREEN_8.png" alt="SS-Early Eps Vinyl" class="image">
+      <img src="images/SUMMER_SALT_EPS_CLOUDY_GREEN_8.png" alt="SS-Early Eps Vinyl" class="image">
       <div class="text-overlay">THE EARLY EPS VINYL $25.00</div>
     </div>
   </div>
@@ -106,20 +106,20 @@
 
   <script>
     let cartItems = [];
-
+  
     function addToCart(itemName, itemPrice) {
       // Add the item to the cart
       cartItems.push({ name: itemName, price: itemPrice });
-
+  
       // Update the cart display
       updateCartDisplay();
     }
-
+  
     function updateCartDisplay() {
       // Update the cart container with the current cart items
       let cartContainer = document.getElementById('cart-container');
       cartContainer.innerHTML = '<h3>Shopping Cart</h3>';
-
+  
       if (cartItems.length === 0) {
         // Display a message when the cart is empty
         cartContainer.innerHTML += '<p>Your cart is empty.</p>';
@@ -128,12 +128,16 @@
         cartItems.forEach(item => {
           let itemElement = document.createElement('div');
           itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+          itemElement.style.fontSize = '10px'; // Set font size to 16px for items
           cartContainer.appendChild(itemElement);
         });
-
+  
         // Display the total price
         let totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
-        cartContainer.innerHTML += `<p>Total: $${totalPrice.toFixed(2)}</p>`;
+        let totalElement = document.createElement('p');
+        totalElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+        totalElement.style.fontSize = '10px'; // Set font size to 18px for total
+        cartContainer.appendChild(totalElement);
       }
     }
   </script>
