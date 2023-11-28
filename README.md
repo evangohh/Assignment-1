@@ -125,3 +125,17 @@ Usage: JavaScript was used to enhance the website's interactivity. It facilitate
 - Test the website on popular browsers (Chrome, Firefox, Safari, Edge) to ensure compatibility.
 - Verify that the website is responsive on various screen sizes (desktop, tablet, mobile).
 - Check for any layout issues or discrepancies in different browsers.
+
+## Bugs / Issues
+
+Issue: On Google, the dropdown menu had slight alignment issues.
+
+- Resolution: Adjusted CSS styles to ensure consistent alignment across browsers.
+
+Issue: The hover-over functionality for merchandise details was not working on mobile devices.
+
+- Resolution: Implemented a touch-friendly solution for mobile users.
+
+Issue: Some tour dates were displaying incorrect venue details.
+
+- Resolution: Updated the backend data source to ensure accuracy in tour information.
