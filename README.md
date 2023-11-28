@@ -139,3 +139,80 @@ Issue: The hover-over functionality for merchandise details was not working on m
 Issue: Some tour dates were displaying incorrect venue details.
 
 - Resolution: Updated the backend data source to ensure accuracy in tour information.
+
+## References:
+Summer Salt Band Image
+https://www.facebook.com/summersaltatx/
+
+transparent facebook image
+https://similarpng.com/facebook-icon-isolated-on-transparent-background-png/
+
+transparent Instagram icon
+https://www.pinterest.com/pin/598767712961591606/
+
+spotify icon
+https://www.freepik.com/icon/spotify_725342
+
+transparent twitter icon
+https://similarpng.com/black-icon-twitter-logo-transparent-png/#google_vignette
+
+campanita tealerrina tea
+https://www.summersalt.band/products/744354-campanita-tealerina-tee
+
+summer salt hoodie
+https://www.summersalt.band/products/734267-summer-salt-rainbow-cropped-hoodie
+
+summer salt juicy hoodie
+https://www.summersalt.band/products/744356-juicy-fruit-hoodie
+
+summer salt tote bag
+https://www.summersalt.band/products/744351-paisley-flower-tote-bag
+
+summer salt enamel pin
+https://www.summersalt.band/products/748012-campanita-enamel-pin
+
+summer salt early eps vinyl
+https://www.summersalt.band/products/734253-the-early-eps-vinyl
+
+happy camper vinyl
+https://www.summersalt.band/products/638851-happy-camper
+
+sequoia moon vinyl
+https://www.summersalt.band/products/699964-sequoia-moon
+
+favourite holiday vinyl
+https://www.summersalt.band/products/656640-favorite-holiday-vinyl
+
+honeyweed vinyl
+https://www.summersalt.band/products/654840-honeyweed-vinyl
+
+avenue g vinyl
+https://www.summersalt.band/products/673677-avenue-g-7-vinyl
+
+gray  happy camper tee
+https://www.summersalt.band/products/641558-gray-happy-camper-tee
+
+sequoia moon tee
+https://www.summersalt.band/products/704610-sequoia-moon-tee
+
+
+juicy fruit cropped tee
+https://www.summersalt.band/products/744355-juicy-fruit-cropped-tee
+
+dog driving tee
+https://www.summersalt.band/products/732241-dog-driving-tee
+
+summer salt cap
+https://www.summersalt.band/products/744399-logo-dad-hat
+
+summer salt heart sunglasses
+https://www.summersalt.band/products/651898-heart-sunglasses
+
+airplane dog socks
+https://www.summersalt.band/products/717480-airplane-dog-socks
+
+dog sticker
+https://www.summersalt.band/products/664326-dog-sticker
+	
+matt and eugene image
+https://www.soundsofsaving.org/news/check-in-series-summer-salt-reimagines-their-past-on-the-juniper-songbook-by-alyssa-goldberg
