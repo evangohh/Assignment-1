@@ -44,3 +44,14 @@ function updateCartDisplay() {
 function updateCartInLocalStorage() {
   localStorage.setItem('cart', JSON.stringify(cartItems));
 }
+// Function to clear the cart
+function clearCart() {
+    // Clear the cart items
+    cartItems = [];
+  
+    // Update the cart display
+    updateCartDisplay();
+  
+    // Update the cart in localStorage
+    updateCartInLocalStorage();
+  }
