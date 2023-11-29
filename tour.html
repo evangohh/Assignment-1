@@ -4,11 +4,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="merch.css">
   <link rel="stylesheet" href="tour.css">
 
   <title>Tour - SummerSalt</title>
 </head>
+<style>
+   body {
+    background-color: powderblue;
+    font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+    margin: 0;
+  }
+  .header {
+    text-align: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px; /* Add margin between links */
+}
+
+.header h4 {
+  display: inline; /* Prevents the line break between "FAQ" and "/" */
+}
+  .dropbtn {
+    margin-left: 10px; /* Adjust the value as needed to move the button away from the left side */
+    margin-top: 10px;
+  }
+  .concert-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .concert {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+  }
+  .flex-container-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.flex-item {
+  margin: 0 10px;
+}
+
+.button,
+.dropbtn {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 10px ;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+}
+
+.button:hover {
+  background-color: #7ac2cc;
+}
+/* Styles for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(49, 157, 200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Styles for the dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: purple;
+}
+/* Display the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  /* Add a media query for larger screens (desktop) */
+  @media (min-width: 768px) {
+    .concert-container {
+      flex-direction: row;
+    }
+
+    .concert {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: powderblue;
+    color: black;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px; /* Add margin between links */
+  }
+  
+  .header h4 {
+    display: inline; /* Prevents the line break between "FAQ" and "/" */
+  }
+</style>
 <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
