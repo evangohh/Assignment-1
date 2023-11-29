@@ -6,39 +6,195 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer Salt - Unofficial Store</title>
   <link rel="stylesheet" href="merch.css">
-  <link rel="stylesheet" href ="style.css">
   <style>
-    .dropdown {
-      position: fixed;
-      top: 0;
-      left: 0;
-      margin: 10px; 
-    }
+ body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: powderblue url('images/summer salt band.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(1.2);
+  font-family: 'Caveat', cursive, 'Oswald', sans-serif;
+}
 
-    body {
-      margin: 0;
-      padding: 0; 
-    }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('images/summer_salt_band.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  transition: opacity 0.5s ease;
+}
 
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: url('images/summer_salt_band.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      transition: opacity 0.5s ease;
-    }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  color: white;
+}
 
-    .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 25vh;
-      color: white; /* Text color on top of the background image */
-    }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: powderblue;
+  color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.header h4 {
+  display: inline;
+  color: white;
+}
+
+.header a:link,
+.header a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.header a:hover {
+  background-color: purple;
+  color: white;
+}
+
+.centered-content,
+#buttons,
+.flex-container,
+.flex-container-cover,
+.flex-item,
+.button,
+.dropbtn,
+.dropdown,
+.dropdown-content,
+.dropdown-content a,
+.concert-container,
+.concert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.centered-content a,
+.header a,
+.flex-item a,
+.dropdown-content a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(49, 157, 200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  border-radius: 10px;
+  left: 0;
+  top: 100%;
+}
+
+/* Styles for the dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: purple;
+}
+
+/* Display the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.FAQ-Policies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.FAQ-Policies a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.FAQ-Policies h4 {
+  display: inline;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  .button, .dropbtn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  #buttons,
+  .flex-container,
+  .flex-container-cover,
+  .flex-item {
+    flex-direction: row;
+    margin-right: 0;
+  }
+
+  .flex-item {
+    margin: 5px 0;
+  }
+
+  .concert {
+    width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -89,8 +245,8 @@
       <a href="about.html" class="button">About</a>
     </div>
   </div>  
-  <h1>CAMPANITA - OUT NOW!</h1>
-  <img src="images/v600_Campanita_album_art.jpg"Campanita Albumstyle="width: 300px; height: 300px; margin-bottom: 20px;">
+  <h1 style="color: white; text-align: center;">CAMPANITA - OUT NOW!</h1>
+  <img src="images/v600_Campanita_album_art.jpg" style="width: 400px; height: 400px; margin-bottom: 20px;">
   <div style="height: 10px; background-color: white;"></div>
     <script>
  document.addEventListener("scroll", function () {
