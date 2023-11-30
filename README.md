@@ -94,18 +94,22 @@ Usage: JavaScript was used to enhance the website's interactivity. It facilitate
 
 #### Facebook
 Official Site: [Facebook](https://www.facebook.com/summersaltatx/)
+
 Usage: Linking to the official facebook page for users to access.
 
 #### Instagram
 Official Site: [Instagram](https://www.instagram.com/_summer_salt_/)
+
 Usage: Linking to the official instagram page for users to access.
 
 #### Twitter
 Official Site: [Twitter](https://twitter.com/SummerSaltATX)
+
 Usage: Linking to the official Twitter page for users to access.
 
 #### Spotify
 Official Site: [Spotify](https://open.spotify.com/artist/3MATPJ9tYbcMhw5VOZrRU6?si=kXnJ6UhhRDCJ8kN8tmbpDA&nd=1)
+
 Usage: Linking to the official Spotify page for users to listen to Summer Salts music.
 
 ## Testing
